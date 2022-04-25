@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap");
+
 html {
   font-size: 10px;
   box-sizing: border-box;
+  height: 100%;
 }
 body,
 #root {
@@ -13,6 +16,7 @@ input,
 select,
 textarea {
   font-size: 1.6rem;
+  font-family: "Nunito", sans-serif;
 }
 a {
   text-decoration: none;
@@ -25,6 +29,7 @@ a:hover {
   grid-template-areas: "header" "main" "footer";
   grid-template-columns: 1fr;
   grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
 }
 header,
 footer {
@@ -43,4 +48,65 @@ main {
 footer {
   grid-area: footer;
   justify-content: center;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main {
+  flex: 3 60rem;
+}
+.sidebar {
+  flex: 1 20rem;
+}
+
+/* Products */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.products-container li {
+  list-style: none;
+  margin: 2rem 1rem;
+  max-width: 28rem;
+}
+.products-container li > div {
+  display: flex;
+  flex-direction: column;
+}
+.products-container a {
+  color: #333;
+  text-transform: capitalize;
+  display: inline-block;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.products-container a:hover {
+  color: orange;
+}
+.products-container img {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-wrapper p {
+  font-weight: bold;
+}
+.btn {
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  padding: 1rem;
+  font-weight: bold;
+}
+.btn-primary {
+  color: #f4f4f4;
+  background-color: orange;
+}
+.btn-primary:hover {
+  background-color: rgba(255, 166, 0, 0.781);
 }
