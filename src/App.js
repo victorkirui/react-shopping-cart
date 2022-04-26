@@ -16,7 +16,6 @@ class App extends Component {
   }
 
   sortProducts = (e) => {
-    // impl
     console.log(e.target.value);
     const sort = e.target.value;
     this.setState((state) => ({
@@ -40,7 +39,6 @@ class App extends Component {
   };
 
   filterProducts = (e) => {
-    // impl
     if (e.target.value === "") {
       this.setState({
         size: e.target.value,
