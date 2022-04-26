@@ -6,7 +6,7 @@ class Filter extends Component {
     console.log(this.props);
     const { count, size, sort, sortProducts, filterProducts } = this.props;
     return (
-      <div className="filter">
+      <div className="filter header-style">
         <div className="filter-result">{count} Products</div>
         <div className="filter-sort">
           Order{" "}
